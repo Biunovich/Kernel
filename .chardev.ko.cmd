@@ -1,1 +1,0 @@
-cmd_/home/buin/Загрузки/Элтекс/Kernel/chardev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/buin/Загрузки/Элтекс/Kernel/chardev.ko /home/buin/Загрузки/Элтекс/Kernel/chardev.o /home/buin/Загрузки/Элтекс/Kernel/chardev.mod.o
