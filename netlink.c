@@ -1,5 +1,5 @@
 #include "mylib.h"
-struct sock *nl_sock = NULL;
+struct sock *nl_sock;
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Buin Buin");
