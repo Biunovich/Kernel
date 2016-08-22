@@ -5,6 +5,9 @@
 #include <linux/sysfs.h>
 #include <linux/string.h> 
 #include <asm/uaccess.h>
+#include <net/sock.h>
+#include <linux/netlink.h>
+#include <linux/skbuff.h>
 #include <linux/init.h>
 #include <linux/ioctl.h>
 #include <linux/miscdevice.h>
@@ -15,6 +18,7 @@
 #define IOC_MAGIC   'h' 
 #define IOCTL_GET_STRING _IOR(IOC_MAGIC, 1, char *) 
 #define IOCTL_SET_STRING _IOW(IOC_MAGIC, 0, char *)
+#define NETLINK_USER 31
 
 static int device_open(struct inode *, struct file *);
 static int device_release(struct inode *, struct file *);
